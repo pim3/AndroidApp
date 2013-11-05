@@ -26,7 +26,7 @@ public class WebViewActivity extends Activity {
 		
 		webView.setWebChromeClient(wcc);
 //		webView.loadUrl("http://www.hnonline.sk");
-			webView.loadUrl("file:///android_asset/index.html");
+			webView.loadUrl("file:///android_asset/test1.html");
 //			webView.loadUrl("http://patres.php5.sk"); 
 	}
 }
