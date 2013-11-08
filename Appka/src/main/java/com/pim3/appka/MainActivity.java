@@ -67,6 +67,7 @@ public class MainActivity extends ActionBarActivity {
                 @Override
                 public void onClick(View arg0) {
                     Intent intent = new Intent(context, WebViewActivity.class);
+                    intent.putExtra("url","file:///android_asset/test1.html");
                     startActivity(intent);
                 }
             });

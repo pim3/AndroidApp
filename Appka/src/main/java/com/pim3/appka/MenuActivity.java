@@ -79,7 +79,7 @@ public class MenuActivity extends Activity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(context, LayoutActivity.class);
-            intent.putExtra("int", layoutResource);
+            intent.putExtra("layoutResource", layoutResource);
             startActivity(intent);
         }
     }
