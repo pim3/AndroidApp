@@ -11,6 +11,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static android.view.View.OnClickListener;
 
 /**
@@ -22,11 +25,18 @@ public class MenuActivity extends Activity {
     private MenuContent menuContent;
 
     public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         context = getApplicationContext();
-        setContentView(R.layout.menu);
 
         //get content of menu
         menuContent = getIntent().getParcelableExtra("menuContent");
+
+        if(menuContent==null){
+        //this activity is main menu so we need to initialize menu tree structure
+            initApp();
+        }
+
+        setContentView(R.layout.menu);
 
         //get logo resource
         ImageView logo = (ImageView) findViewById(R.id.logo);
@@ -97,5 +107,18 @@ public class MenuActivity extends Activity {
             intent.putExtra("menuContent", menuContent);
             startActivity(intent);
         }
+    }
+
+    private void initApp(){
+        List<ButtonDefinition> temp2 = new ArrayList<ButtonDefinition>();
+        temp2.add(new ButtonDefinition(R.string.hello_world,"file:///android_asset/test1.html"));
+        temp2.add(new ButtonDefinition(R.string.hello_world,"file:///android_asset/test1.html"));
+        temp2.add(new ButtonDefinition(R.string.hello_world,"file:///android_asset/test1.html"));
+
+        List<ButtonDefinition> temp = new ArrayList<ButtonDefinition>();
+        temp.add(new ButtonDefinition("neklikat",new MenuContent(R.drawable.ic_launcher,temp2)));
+        temp.add(new ButtonDefinition(R.string.hello_world,"file:///android_asset/test1.html"));
+        temp.add(new ButtonDefinition(R.string.hello_world,"file:///android_asset/test1.html"));
+        menuContent = new MenuContent(R.drawable.logo, temp);
     }
 }
