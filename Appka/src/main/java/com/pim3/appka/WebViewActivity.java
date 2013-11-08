@@ -12,6 +12,7 @@ public class WebViewActivity extends Activity {
 	private WebView webView;
  
 	public void onCreate(Bundle savedInstanceState) {
+
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.webview);
 		webView = (WebView) findViewById(R.id.webView1);
@@ -25,8 +26,9 @@ public class WebViewActivity extends Activity {
 		    }
 		
 		webView.setWebChromeClient(wcc);
-//		webView.loadUrl("http://www.hnonline.sk");
-			webView.loadUrl("file:///android_asset/test1.html");
+    		webView.loadUrl("file:///android_asset/exp.html");
+        //    webView.loadUrl("file:///android_asset/iter.html");
+//			webView.loadUrl("file:///android_asset/test1.html");
 //			webView.loadUrl("http://patres.php5.sk"); 
 	}
 }
