@@ -4,5 +4,8 @@
     <string name="app_name">Appka</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="som_diabetikom">Som diabetikom</string>
+    <string name="zariadenia">Zariadenia</string>
+    <string name="o_programe">O programe</string>
 
 </resources>
