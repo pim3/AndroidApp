@@ -31,6 +31,8 @@
             android:screenOrientation="landscape"
             android:configChanges="orientation|keyboardHidden"
             android:name="com.pim3.appka.WebViewActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
             android:theme="@style/AppTheme" />
     </application>
 

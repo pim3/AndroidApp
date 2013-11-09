@@ -116,7 +116,7 @@ public class MenuActivity extends Activity {
         temp2.add(new ButtonDefinition(R.string.hello_world,"file:///android_asset/test1.html"));
 
         List<ButtonDefinition> temp = new ArrayList<ButtonDefinition>();
-        temp.add(new ButtonDefinition(R.string.hello_world,new MenuContent(R.drawable.ic_launcher,temp2)));
+        temp.add(new ButtonDefinition(R.string.hello_world,"file:///android_asset/test1.html"));
         temp.add(new ButtonDefinition(R.string.hello_world,"file:///android_asset/test1.html"));
         temp.add(new ButtonDefinition(R.string.hello_world,"file:///android_asset/test1.html"));
         menuContent = new MenuContent(R.drawable.logo, temp);
