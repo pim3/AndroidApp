@@ -26,6 +26,7 @@ public class WebViewActivity extends Activity {
         s.setDomStorageEnabled(true);
         s.setJavaScriptEnabled(true);
 
+
         s.setUseWideViewPort(true);
         s.setLoadWithOverviewMode(true);
 
@@ -36,6 +37,9 @@ public class WebViewActivity extends Activity {
             s.setAllowUniversalAccessFromFileURLs(true);
             s.setAllowFileAccessFromFileURLs(true);
         }
+        s.setSupportZoom(false);
+        s.setBuiltInZoomControls(false);
+
         webView.setWebChromeClient(wcc);
         webView.loadUrl(url);
     }
