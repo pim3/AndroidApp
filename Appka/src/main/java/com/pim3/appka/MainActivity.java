@@ -12,19 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_main);
-
-      //  if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment(getApplicationContext()))
-                    .commit();
-     //   }
+        setContentView(R.layout.loader);
     }
 
 
@@ -48,6 +42,8 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
+
     /**
      * A placeholder fragment containing a simple view.
      */
@@ -68,6 +64,7 @@ public class MainActivity extends ActionBarActivity {
                 @Override
                 public void onClick(View arg0) {
                     Intent intent = new Intent(context, WebViewActivity.class);
+                    intent.putExtra("url","file:///android_asset/test1.html");
                     startActivity(intent);
                 }
             });
