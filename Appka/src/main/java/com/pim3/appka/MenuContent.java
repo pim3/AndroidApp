@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Created by loucher on 11/8/13.
  */
-public class MenuContent implements Serializable {
+public class MenuContent implements Parcelable {
     private int logoResource;
     private List<ButtonDefinition> buttonDefinitionList;
 
@@ -28,4 +28,13 @@ public class MenuContent implements Serializable {
     }
 
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+
+    }
 }
