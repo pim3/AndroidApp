@@ -6,7 +6,7 @@ import android.os.Parcelable;
 /**
  * Created by loucher on 11/8/13.
  */
-public class ButtonDefinition implements Parcelable{
+public class ButtonDefinition implements Parcelable {
     private int stringResource = -1;
     private ButtonType buttonType = null;
     private String url = "error";
@@ -52,9 +52,10 @@ public class ButtonDefinition implements Parcelable{
 
     protected ButtonDefinition(Parcel in) {
         stringResource = in.readInt();
-        buttonType = (ButtonType)in.readValue(null);
+        buttonType = (ButtonType) in.readValue(null);
+        buttonType=ButtonType.WEBVIEW;
         url = in.readString();
-        menuContent = (MenuContent)in.readValue(null);
+        menuContent = (MenuContent) in.readValue(null);
         layoutResource = in.readInt();
     }
 
