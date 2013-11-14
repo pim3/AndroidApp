@@ -19,7 +19,7 @@ public class WebViewActivity extends Activity {
 
         //load webpage url
         String url = getIntent().getStringExtra("url");
-
+        url="file:///android_asset/"+url;
         //setup webView
         webView = (WebView) findViewById(R.id.webView1);
         WebSettings s = webView.getSettings();
@@ -28,8 +28,11 @@ public class WebViewActivity extends Activity {
         s.setJavaScriptEnabled(true);
 
 
-        s.setUseWideViewPort(true);
-        s.setLoadWithOverviewMode(true);
+//        s.setUseWideViewPort(true);
+//        s.setLoadWithOverviewMode(true);
+
+
+//        s.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NORMAL);
 //
 //        WebChromeClient wcc = new WebChromeClient();
             //special settings for JB webview

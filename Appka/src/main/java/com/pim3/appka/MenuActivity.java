@@ -33,7 +33,8 @@ public class MenuActivity extends Activity {
 
         if(menuContent==null){
         //this activity is main menu so we need to initialize menu tree structure
-            initApp();
+//            debugMenu();
+            initMenu();
         }
 
         setContentView(R.layout.menu);
@@ -109,7 +110,7 @@ public class MenuActivity extends Activity {
         }
     }
 
-    private void initApp(){
+    private void debugMenu(){
         List<ButtonDefinition> temp2 = new ArrayList<ButtonDefinition>();
         temp2.add(new ButtonDefinition(R.string.hello_world,"file:///android_asset/test1.html"));
         temp2.add(new ButtonDefinition(R.string.hello_world,"file:///android_asset/test1.html"));
@@ -120,5 +121,37 @@ public class MenuActivity extends Activity {
         temp.add(new ButtonDefinition(R.string.hello_world,"file:///android_asset/test1.html"));
         temp.add(new ButtonDefinition(R.string.hello_world,"file:///android_asset/test1.html"));
         menuContent = new MenuContent(R.drawable.logo, temp);
+    }
+
+    private void initMenu(){
+        String testPage = "test1.html";
+
+        List<ButtonDefinition> glukomerButtons = new ArrayList<ButtonDefinition>();
+        glukomerButtons.add(new ButtonDefinition(R.string.kalibracia, testPage));
+        glukomerButtons.add(new ButtonDefinition(R.string.meranie, testPage));
+        glukomerButtons.add(new ButtonDefinition(R.string.vyhodnotenie, testPage));
+        MenuContent glukomerMenu = new MenuContent(R.drawable.logo, glukomerButtons);
+
+        List<ButtonDefinition> vahaButtons = new ArrayList<ButtonDefinition>();
+        vahaButtons.add(new ButtonDefinition(R.string.meranie, testPage));
+        vahaButtons.add(new ButtonDefinition(R.string.vyhodnotenie, testPage));
+        MenuContent vahaMenu = new MenuContent(R.drawable.logo,vahaButtons);
+
+        List<ButtonDefinition> tlakomerButtons = new ArrayList<ButtonDefinition>();
+        tlakomerButtons.add(new ButtonDefinition(R.string.meranie, testPage));
+        tlakomerButtons.add(new ButtonDefinition(R.string.vyhodnotenie, testPage));
+        MenuContent tlakomerMenu = new MenuContent(R.drawable.logo,tlakomerButtons);
+
+        List<ButtonDefinition> zariadeniaButtons = new ArrayList<ButtonDefinition>();
+        zariadeniaButtons.add(new ButtonDefinition(R.string.glukomer,glukomerMenu));
+        zariadeniaButtons.add(new ButtonDefinition(R.string.vaha,vahaMenu));
+        zariadeniaButtons.add(new ButtonDefinition(R.string.tlakomer,tlakomerMenu));
+        MenuContent zariadeniaMenu = new MenuContent(R.drawable.logo,zariadeniaButtons);
+
+        List<ButtonDefinition> mainMenuButtons = new ArrayList<ButtonDefinition>();
+        mainMenuButtons.add(new ButtonDefinition(R.string.som_diabetikom,testPage));
+        mainMenuButtons.add(new ButtonDefinition(R.string.zariadenia,zariadeniaMenu));
+        mainMenuButtons.add(new ButtonDefinition(R.string.o_programe,testPage));
+        menuContent = new MenuContent(R.drawable.logo, mainMenuButtons);
     }
 }

@@ -7,5 +7,11 @@
     <string name="som_diabetikom">Som diabetikom</string>
     <string name="zariadenia">Zariadenia</string>
     <string name="o_programe">O programe</string>
+    <string name="glukomer">Glukomer</string>
+    <string name="vaha">Vaha</string>
+    <string name="tlakomer">Tlakomer</string>
+    <string name="vyhodnotenie">Vyhodnotenie</string>
+    <string name="kalibracia">Kalibracia</string>
+    <string name="meranie">Meranie</string>
 
 </resources>

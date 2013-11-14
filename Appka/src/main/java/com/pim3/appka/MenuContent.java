@@ -27,7 +27,6 @@ public class MenuContent implements Parcelable {
         return buttonDefinitionList;
     }
 
-
     @Override
     public int describeContents() {
         return 0;
@@ -35,6 +34,23 @@ public class MenuContent implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-
+        dest.writeInt(this.logoResource);
+        dest.writeList(this.buttonDefinitionList);
     }
+
+    private MenuContent(Parcel in) {
+        this.logoResource = in.readInt();
+        this.buttonDefinitionList = new ArrayList<ButtonDefinition>();
+        in.readList(this.buttonDefinitionList, ButtonDefinition.class.getClassLoader());
+    }
+
+    public static Creator<MenuContent> CREATOR = new Creator<MenuContent>() {
+        public MenuContent createFromParcel(Parcel source) {
+            return new MenuContent(source);
+        }
+
+        public MenuContent[] newArray(int size) {
+            return new MenuContent[size];
+        }
+    };
 }

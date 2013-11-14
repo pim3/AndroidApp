@@ -53,9 +53,8 @@ public class ButtonDefinition implements Parcelable {
     protected ButtonDefinition(Parcel in) {
         stringResource = in.readInt();
         buttonType = (ButtonType) in.readValue(null);
-        buttonType=ButtonType.WEBVIEW;
         url = in.readString();
-        menuContent = (MenuContent) in.readValue(null);
+        menuContent = in.readParcelable(MenuContent.class.getClassLoader());
         layoutResource = in.readInt();
     }
 
@@ -67,7 +66,7 @@ public class ButtonDefinition implements Parcelable {
         dest.writeInt(stringResource);
         dest.writeValue(buttonType);
         dest.writeString(url);
-        dest.writeValue(menuContent);
+        dest.writeParcelable(menuContent, flags);
         dest.writeInt(layoutResource);
     }
 
