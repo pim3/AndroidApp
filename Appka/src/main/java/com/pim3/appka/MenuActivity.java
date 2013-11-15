@@ -125,6 +125,7 @@ public class MenuActivity extends Activity {
 
     private void initMenu(){
         String testPage = "test1.html";
+        String tlakomerMeranie = "tlakomer.html";
 
         List<ButtonDefinition> glukomerButtons = new ArrayList<ButtonDefinition>();
         glukomerButtons.add(new ButtonDefinition(R.string.kalibracia, testPage));
@@ -138,7 +139,7 @@ public class MenuActivity extends Activity {
         MenuContent vahaMenu = new MenuContent(R.drawable.logo,vahaButtons);
 
         List<ButtonDefinition> tlakomerButtons = new ArrayList<ButtonDefinition>();
-        tlakomerButtons.add(new ButtonDefinition(R.string.meranie, testPage));
+        tlakomerButtons.add(new ButtonDefinition(R.string.meranie, tlakomerMeranie));
         tlakomerButtons.add(new ButtonDefinition(R.string.vyhodnotenie, testPage));
         MenuContent tlakomerMenu = new MenuContent(R.drawable.logo,tlakomerButtons);
 
