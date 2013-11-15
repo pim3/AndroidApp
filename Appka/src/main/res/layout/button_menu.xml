@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="80dp"
+    android:text="Som diabetikom"
+    android:textColor="@color/white"
+    android:textSize="30dp"
+    android:id="@+id/button"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/button_red"
+    android:padding="10dp"
+    android:layout_margin="10dp"/>

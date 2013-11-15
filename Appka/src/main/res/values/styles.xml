@@ -4,6 +4,12 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
     <color name="background">#edf1f8</color>
+    <color name="button_blue">#1D46A0</color>
+    <color name="button_red">#CA1E04</color>
+    <color name="button_yellow">#FEF215</color>
+    <color name="button_green">#26AA30</color>
+    <color name="white">#FFFFFF</color>
 </resources>
