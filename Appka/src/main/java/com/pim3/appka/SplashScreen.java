@@ -41,26 +41,26 @@ public class SplashScreen extends Activity {
         glukomerButtons.add(new ButtonDefinition(R.string.kalibracia, testPage));
         glukomerButtons.add(new ButtonDefinition(R.string.meranie, testPage));
         glukomerButtons.add(new ButtonDefinition(R.string.vyhodnotenie, testPage));
-        MenuContent glukomerMenu = new MenuContent(R.drawable.abc_ic_search, R.string.glukomer, glukomerButtons);
+        MenuContent glukomerMenu = new MenuContent(R.drawable.glu_logo, R.string.glukomer, glukomerButtons);
 
         //VAHA MENU
         List<ButtonDefinition> vahaButtons = new ArrayList<ButtonDefinition>();
         vahaButtons.add(new ButtonDefinition(R.string.meranie, testPage));
         vahaButtons.add(new ButtonDefinition(R.string.vyhodnotenie, testPage));
-        MenuContent vahaMenu = new MenuContent(R.drawable.abc_ic_search, R.string.vaha, vahaButtons);
+        MenuContent vahaMenu = new MenuContent(R.drawable.vaha_logo, R.string.vaha, vahaButtons);
 
         //TLAKOMER MENU
         List<ButtonDefinition> tlakomerButtons = new ArrayList<ButtonDefinition>();
         tlakomerButtons.add(new ButtonDefinition(R.string.meranie, tlakomerMeranie));
         tlakomerButtons.add(new ButtonDefinition(R.string.vyhodnotenie, testPage));
-        MenuContent tlakomerMenu = new MenuContent(R.drawable.logo_tlakomer, R.string.tlakomer, tlakomerButtons);
+        MenuContent tlakomerMenu = new MenuContent(R.drawable.tlak_logo, R.string.tlakomer, tlakomerButtons);
 
         //ZARIADENIA MENU
         List<ButtonDefinition> zariadeniaButtons = new ArrayList<ButtonDefinition>();
         zariadeniaButtons.add(new ButtonDefinition(R.string.glukomer, glukomerMenu));
         zariadeniaButtons.add(new ButtonDefinition(R.string.vaha, vahaMenu));
         zariadeniaButtons.add(new ButtonDefinition(R.string.tlakomer, tlakomerMenu));
-        MenuContent zariadeniaMenu = new MenuContent(R.drawable.abc_ic_search, R.string.zariadenia, zariadeniaButtons);
+        MenuContent zariadeniaMenu = new MenuContent(R.drawable.set_logo, R.string.zariadenia, zariadeniaButtons);
 
         //MAIN MENU
         List<ButtonDefinition> mainMenuButtons = new ArrayList<ButtonDefinition>();
