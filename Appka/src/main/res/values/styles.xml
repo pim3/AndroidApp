@@ -6,6 +6,7 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
     </style>
+    <dimen name="no_text_title_height">100dp</dimen>
     <color name="background">#edf1f8</color>
     <color name="button_blue">#1D46A0</color>
     <color name="button_red">#CA1E04</color>

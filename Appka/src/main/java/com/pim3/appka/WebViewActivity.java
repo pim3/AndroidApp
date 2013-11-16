@@ -1,11 +1,7 @@
 package com.pim3.appka;
 
 import android.app.Activity;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Display;
-import android.view.WindowManager;
-import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 

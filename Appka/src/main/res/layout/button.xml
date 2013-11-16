@@ -7,6 +7,6 @@
     android:textSize="30dp"
     android:id="@+id/button"
     android:layout_gravity="center_horizontal"
-    android:background="@color/button_red"
+    android:background="@drawable/button_shape"
     android:padding="10dp"
     android:layout_margin="10dp"/>

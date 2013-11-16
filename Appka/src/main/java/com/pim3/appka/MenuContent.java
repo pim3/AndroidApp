@@ -3,7 +3,6 @@ package com.pim3.appka;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,15 +11,21 @@ import java.util.List;
  */
 public class MenuContent implements Parcelable {
     private int logoResource;
+    private int titleResource;
     private List<ButtonDefinition> buttonDefinitionList;
 
-    public MenuContent(int logoResource, List<ButtonDefinition> buttonDefinitionList) {
+    public MenuContent(int logoResource, int titleResource, List<ButtonDefinition> buttonDefinitionList) {
         this.logoResource = logoResource;
+        this.titleResource = titleResource;
         this.buttonDefinitionList = buttonDefinitionList;
     }
 
     public int getLogoResource() {
         return logoResource;
+    }
+
+    public int getTitleResource() {
+        return titleResource;
     }
 
     public List<ButtonDefinition> getButtonDefinitionList() {
@@ -35,11 +40,13 @@ public class MenuContent implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(this.logoResource);
+        dest.writeInt(this.titleResource);
         dest.writeList(this.buttonDefinitionList);
     }
 
     private MenuContent(Parcel in) {
         this.logoResource = in.readInt();
+        this.titleResource = in.readInt();
         this.buttonDefinitionList = new ArrayList<ButtonDefinition>();
         in.readList(this.buttonDefinitionList, ButtonDefinition.class.getClassLoader());
     }
