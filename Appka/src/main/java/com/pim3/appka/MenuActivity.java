@@ -30,11 +30,14 @@ public class MenuActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         context = getApplicationContext();
-        if (context == null)
+        if (context == null){
             throw new ExceptionInInitializerError("unable to get application context");
+        }else{
+            //set slide animation on creation
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+        }
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        //set slide animation on creation
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+
 
         //GET MENU CONTENT SETTINGS
         menuContent = getIntent().getParcelableExtra("menuContent");

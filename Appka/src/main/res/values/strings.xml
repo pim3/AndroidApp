@@ -13,4 +13,5 @@
     <string name="vyhodnotenie">Vyhodnotenie</string>
     <string name="kalibracia">Kalibracia</string>
     <string name="meranie">Meranie</string>
+    <string name="loading">načítavam...</string>
 </resources>
