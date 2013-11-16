@@ -7,10 +7,6 @@
         <item name="android:windowFullscreen">true</item>
     </style>
     <dimen name="no_text_title_height">100dp</dimen>
-    <color name="background">#edf1f8</color>
-    <color name="button_blue">#1D46A0</color>
-    <color name="button_red">#CA1E04</color>
-    <color name="button_yellow">#FEF215</color>
-    <color name="button_green">#26AA30</color>
-    <color name="white">#FFFFFF</color>
+    <color name="cervena">#CA1E04</color>
+    <color name="biela">#FFFFFF</color>
 </resources>

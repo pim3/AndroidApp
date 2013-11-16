@@ -14,4 +14,5 @@
     <string name="kalibracia">Kalibracia</string>
     <string name="meranie">Meranie</string>
     <string name="loading">načítavam...</string>
+    <string name="exit">Koniec</string>
 </resources>

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pim3.appka"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="15"
@@ -12,13 +12,13 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.pim3.appka.MenuActivity"
+            android:name=".SplashScreen"
             android:allowTaskReparenting="true"
             android:screenOrientation="portrait"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -26,9 +26,14 @@
         </activity>
 
         <activity
+            android:name=".MenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity
             android:screenOrientation="landscape"
             android:configChanges="orientation|keyboardHidden"
-            android:name="com.pim3.appka.WebViewActivity"
+            android:name=".WebViewActivity"
             android:theme="@style/AppTheme" />
     </application>
 

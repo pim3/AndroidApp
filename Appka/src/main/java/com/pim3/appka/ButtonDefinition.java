@@ -30,6 +30,11 @@ public class ButtonDefinition implements Parcelable {
         buttonType = ButtonType.MENU;
     }
 
+    public ButtonDefinition(int stringResource){
+        this.stringResource = stringResource;
+        buttonType = ButtonType.EXIT;
+    }
+
     public int getStringResource() {
         return stringResource;
     }

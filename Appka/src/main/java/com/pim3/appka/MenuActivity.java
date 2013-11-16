@@ -1,8 +1,10 @@
 package com.pim3.appka;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.InflateException;
@@ -14,39 +16,26 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static android.view.View.OnClickListener;
 
 /**
  * Created by loucher on 11/8/13.
  */
 public class MenuActivity extends Activity {
-
     private Context context;
     private MenuContent menuContent;
-
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         context = getApplicationContext();
-        if (context == null){
+        if (context == null) {
             throw new ExceptionInInitializerError("unable to get application context");
-        }else{
-            //set slide animation on creation
-            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
         }
+        //set slide animation on creation
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
 
         //GET MENU CONTENT SETTINGS
         menuContent = getIntent().getParcelableExtra("menuContent");
-        // when menuContent is null it means that this is main menu
-        // and we need to initialize setting
-        if (menuContent == null) {
-            initMenu();
-        }
-
         //SETUP TITLE
         setContentView(R.layout.menu);
         TextView title = (TextView) findViewById(R.id.title);
@@ -75,13 +64,6 @@ public class MenuActivity extends Activity {
             title.setText(menuContent.getTitleResource());
         }
 
-        //test
-//        List<Integer> colors = new ArrayList<Integer>();
-//        colors.add(R.color.button_blue);
-//        colors.add(R.color.button_green);
-//        colors.add(R.color.button_red);
-//        colors.add(R.color.button_yellow);
-
         //POPULATE BUTTON CONTAINER WITH BUTTONS
         LinearLayout root = (LinearLayout) findViewById(R.id.root);
         LinearLayout buttonContainer = (LinearLayout) findViewById(R.id.buttonContainer);
@@ -100,9 +82,11 @@ public class MenuActivity extends Activity {
                 case MENU:
                     button.setOnClickListener(new MenuListener(bd.getMenuContent()));
                     break;
+                case EXIT:
+                    button.setOnClickListener(new ExitListener());
+                    break;
             }
             buttonContainer.addView(button);
-
         }
     }
 
@@ -154,45 +138,12 @@ public class MenuActivity extends Activity {
         }
     }
 
-    //method called by "main menu" on onCreate event to initialize menu structure and buttons
-    private void initMenu() {
-        String testPage = "test1.html";
-        String tlakomerMeranie = "tlakomer.html";
+    private class ExitListener implements OnClickListener {
 
-        //GLUKOMER MENU
-        List<ButtonDefinition> glukomerButtons = new ArrayList<ButtonDefinition>();
-        glukomerButtons.add(new ButtonDefinition(R.string.kalibracia, testPage));
-        glukomerButtons.add(new ButtonDefinition(R.string.meranie, testPage));
-        glukomerButtons.add(new ButtonDefinition(R.string.vyhodnotenie, testPage));
-        MenuContent glukomerMenu = new MenuContent(R.drawable.abc_ic_search, R.string.glukomer, glukomerButtons);
-
-        //VAHA MENU
-        List<ButtonDefinition> vahaButtons = new ArrayList<ButtonDefinition>();
-        vahaButtons.add(new ButtonDefinition(R.string.meranie, testPage));
-        vahaButtons.add(new ButtonDefinition(R.string.vyhodnotenie, testPage));
-        MenuContent vahaMenu = new MenuContent(R.drawable.abc_ic_search, R.string.vaha, vahaButtons);
-
-        //TLAKOMER MENU
-        List<ButtonDefinition> tlakomerButtons = new ArrayList<ButtonDefinition>();
-        tlakomerButtons.add(new ButtonDefinition(R.string.meranie, tlakomerMeranie));
-        tlakomerButtons.add(new ButtonDefinition(R.string.vyhodnotenie, testPage));
-        MenuContent tlakomerMenu = new MenuContent(R.drawable.abc_ic_search, R.string.tlakomer, tlakomerButtons);
-
-        //ZARIADENIA MENU
-        List<ButtonDefinition> zariadeniaButtons = new ArrayList<ButtonDefinition>();
-        zariadeniaButtons.add(new ButtonDefinition(R.string.glukomer, glukomerMenu));
-        zariadeniaButtons.add(new ButtonDefinition(R.string.vaha, vahaMenu));
-        zariadeniaButtons.add(new ButtonDefinition(R.string.tlakomer, tlakomerMenu));
-        MenuContent zariadeniaMenu = new MenuContent(R.drawable.abc_ic_search, R.string.zariadenia, zariadeniaButtons);
-
-        //MAIN MENU
-        List<ButtonDefinition> mainMenuButtons = new ArrayList<ButtonDefinition>();
-        mainMenuButtons.add(new ButtonDefinition(R.string.som_diabetikom, testPage));
-        mainMenuButtons.add(new ButtonDefinition(R.string.zariadenia, zariadeniaMenu));
-        mainMenuButtons.add(new ButtonDefinition(R.string.o_programe, testPage));
-        menuContent = new MenuContent(R.drawable.logo, -1, mainMenuButtons);//-1 no title resource
+        @Override
+        public void onClick(View v) {
+        }
     }
-
     //setting up transition animation when current intent is paused ( pressed Back button)
     @Override
     protected void onPause() {
