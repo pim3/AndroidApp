@@ -53,8 +53,18 @@ if (AdobeEdge.bootstrapLoading) { signaledLoading = true; AdobeEdge.loadResource
 
 loadResources(aLoader, doDelayLoad);
 
-preContent={dom: [ ]};//simpleContent
+preContent={
+   dom: [
+   {
+      id:'preloader3',
+      type:'image',
+      tag:'img',
+      rect:['500','352','200px','17px','auto','auto'],
+      fill:["rgba(0,0,0,0)",'images/preloader3.gif','0px','0px']
+   }]};//simpleContent
 
-dlContent={dom: [ ]};//simpleContent
+dlContent={
+   dom: [
+]};//simpleContent
 
-})( "EDGE-94861709");
+})( "EDGE_tlakomer_meranie");
