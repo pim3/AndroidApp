@@ -13,11 +13,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {
       
       
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 6750, function(sym, e) {
-         sym.stop();
       
-      });
-      //Edge binding end
       
       
       
@@ -25,9 +21,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       
       Symbol.bindElementAction(compId, symbolName, "${_back_to_main}", "click", function(sym, e) {
          // play the timeline from the given position (ms or label)
-         sym.play(0);
-      
-      
+         sym.play("start");
+
       });
       //Edge binding end
       
@@ -41,24 +36,24 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindElementAction(compId, symbolName, "${_next_to_3}", "click", function(sym, e) {
          // insert code for mouse click here// play the timeline from the given position (ms or label)
          sym.play("start_3");
-      
-      
+         
+
       });
       //Edge binding end
       
       Symbol.bindElementAction(compId, symbolName, "${_refresh2}", "click", function(sym, e) {
          // play the timeline from the given position (ms or label)
-         sym.play("start_2");
-      
-      
+         sym.play("continue");
+         
+
       });
       //Edge binding end
       
       Symbol.bindElementAction(compId, symbolName, "${_bact_to_2}", "click", function(sym, e) {
          // play the timeline from the given position (ms or label)
-         sym.play("start_2");
-      
-      
+         sym.play("start__slide_2");
+         
+
       });
       //Edge binding end
       
@@ -79,15 +74,22 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
       
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 16000, function(sym, e) {
-         sym.stop();
-      
+         // play the timeline from the given position (ms or label)
+         sym.play("loop_kruzok");
+         
+
       });
       //Edge binding end
       
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 23309, function(sym, e) {
-         // play the timeline from the given position (ms or label)
+         /*
+         sym.stop();
+         setTimeout(function(){sym.play("loop_start_3b");},2000);
+         */
+         
          sym.play("loop_start_3b");
-      
+         
+
       });
       //Edge binding end
       
@@ -99,13 +101,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
       
-      Symbol.bindElementAction(compId, symbolName, "${_refresh3b}", "click", function(sym, e) {
-         // play the timeline from the given position (ms or label)
-         sym.play("start_3b");
       
-      
-      });
-      //Edge binding end
       
       Symbol.bindElementAction(compId, symbolName, "${_next_to_4}", "click", function(sym, e) {
          // insert code for mouse click here
@@ -123,7 +119,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
       
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 31000, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 30843, function(sym, e) {
          // play the timeline from the given position (ms or label)
          sym.play("loop_start_4");
       
@@ -138,13 +134,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
       
-      Symbol.bindElementAction(compId, symbolName, "${_bact_to_4}", "click", function(sym, e) {
-         // play the timeline from the given position (ms or label)
-         sym.play("start_4");
       
-      
-      });
-      //Edge binding end
       
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 36488, function(sym, e) {
          // play the timeline from the given position (ms or label)
@@ -208,10 +198,10 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
       
       Symbol.bindElementAction(compId, symbolName, "${_back_to_6}", "click", function(sym, e) {
-         // stop the timeline at the given position (ms or label)
-         sym.stop("start_6");
-      
-      
+         // play the timeline from the given position (ms or label)
+         sym.play("start_6");
+         
+
       });
       //Edge binding end
       
@@ -244,11 +234,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
       
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         
-
-      });
-      //Edge binding end
+      
       
       Symbol.bindElementAction(compId, symbolName, "document", "compositionReady", function(sym, e) {
          
@@ -266,7 +252,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       Symbol.bindElementAction(compId, symbolName, "${_next_slide_2}", "click", function(sym, e) {
          // play the timeline from the given position (ms or label)
-         sym.play("start__slide_2");
+         sym.play("continue");
          // insert code for mouse click here
 
       });
@@ -276,6 +262,108 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          // play the timeline from the given position (ms or label)
          sym.play("start");
          // insert code for mouse click here
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_back_to_4}", "click", function(sym, e) {
+         // play the timeline from the given position (ms or label)
+         sym.play("start_4");
+         // insert code for mouse click here
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 11500, function(sym, e) {
+         // insert code here
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 8000, function(sym, e) {
+         // play the timeline from the given position (ms or label)
+         sym.play("start__slide_2");
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_next_from_continue}", "click", function(sym, e) {
+         // play the timeline from the given position (ms or label)
+         sym.play("start__slide_2");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 6750, function(sym, e) {
+         // insert cosym.stop();
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 22000, function(sym, e) {
+         /*
+         var counter = sym.getVariable("counter");
+         //set the value of a Symbol variable
+         //sym.setVariable("counter", counter+"1");
+         counter=counter+1;
+         
+         
+         
+         sym.stop();
+         setTimeout(function(){sym.play();},2000);
+         */
+
+      });
+      //Edge binding end
+
+      
+
+      
+
+      Symbol.bindElementAction(compId, symbolName, "${_pause}", "click", function(sym, e) {
+         sym.stop();
+         // Hide an Element.
+         //  (sym.$("name") resolves an Edge Animate element name to a DOM
+         //  element that can be used with jQuery)
+         sym.$("pause").hide();
+         // Show an Element.
+         //  (sym.$("name") resolves an Edge Animate element name to a DOM
+         //  element that can be used with jQuery)
+         sym.$("play").show();
+         
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_play}", "click", function(sym, e) {
+         sym.play();
+         // Hide an Element.
+         //  (sym.$("name") resolves an Edge Animate element name to a DOM
+         //  element that can be used with jQuery)
+         sym.$("play").hide();
+         // Show an Element.
+         //  (sym.$("name") resolves an Edge Animate element name to a DOM
+         //  element that can be used with jQuery)
+         sym.$("pause").show();
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 63000, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_bact_to_continue}", "click", function(sym, e) {
+         // play the timeline from the given position (ms or label)
+         sym.play("continue");
+         
 
       });
       //Edge binding end
