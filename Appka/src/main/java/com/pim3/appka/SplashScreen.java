@@ -17,7 +17,6 @@ public class SplashScreen extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
-        int SPLASH_TIME_OUT = 3000;
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -28,7 +27,7 @@ public class SplashScreen extends Activity {
                 startActivity(i);
                 finish();
             }
-        }, SPLASH_TIME_OUT);
+        }, 3000);
     }
 
     //method called by "main menu" on onCreate event to initialize menu structure and buttons
