@@ -6,8 +6,7 @@ package com.pim3.appka;
 public enum ButtonType {
     MENU,
     WEBVIEW,
-    LAYOUT,
-    EXIT
+    LAYOUT
 }
 
 

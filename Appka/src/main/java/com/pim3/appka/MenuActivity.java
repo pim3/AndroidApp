@@ -1,10 +1,8 @@
 package com.pim3.appka;
 
 import android.app.Activity;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.InflateException;
@@ -24,6 +22,7 @@ import static android.view.View.OnClickListener;
 public class MenuActivity extends Activity {
     private Context context;
     private MenuContent menuContent;
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         context = getApplicationContext();
@@ -82,9 +81,6 @@ public class MenuActivity extends Activity {
                 case MENU:
                     button.setOnClickListener(new MenuListener(bd.getMenuContent()));
                     break;
-                case EXIT:
-                    button.setOnClickListener(new ExitListener());
-                    break;
             }
             buttonContainer.addView(button);
         }
@@ -138,12 +134,6 @@ public class MenuActivity extends Activity {
         }
     }
 
-    private class ExitListener implements OnClickListener {
-
-        @Override
-        public void onClick(View v) {
-        }
-    }
     //setting up transition animation when current intent is paused ( pressed Back button)
     @Override
     protected void onPause() {
