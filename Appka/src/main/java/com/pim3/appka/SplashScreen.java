@@ -37,7 +37,7 @@ public class SplashScreen extends Activity {
 
         //GLUKOMER MENU
         List<ButtonDefinition> glukomerButtons = new ArrayList<ButtonDefinition>();
-        glukomerButtons.add(new ButtonDefinition(R.string.kalibracia, testPage));
+        glukomerButtons.add(new ButtonDefinition(R.string.kalibracia, "Glukomer_kalibracia.html"));
         glukomerButtons.add(new ButtonDefinition(R.string.meranie, testPage));
         glukomerButtons.add(new ButtonDefinition(R.string.vyhodnotenie, R.layout.glukomer_vyhodnotenie));
         MenuContent glukomerMenu = new MenuContent(R.drawable.glu_logo, R.string.glukomer, glukomerButtons);
