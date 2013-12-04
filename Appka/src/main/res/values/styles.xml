@@ -6,7 +6,36 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
     </style>
+
     <dimen name="no_text_title_height">100dp</dimen>
+
     <color name="cervena">#CA1E04</color>
     <color name="biela">#FFFFFF</color>
+
+    <style name="basicText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/biela</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+    </style>
+
+    <style name="paddingBot" parent="basicText">
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="lastElement" parent="basicText">
+        <item name="android:paddingBottom">30dp</item>
+    </style>
+
+    <style name="list" parent="basicText">
+        <item name="android:paddingLeft">60dp</item>
+    </style>
+
+    <style name="header1" parent="basicText">
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">20dp</item>
+    </style>
 </resources>

@@ -9,20 +9,18 @@ import android.webkit.WebViewClient;
 
 public class WebViewActivity extends Activity {
 
-    private WebView webView;
-
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.webview);
 
         //load webpage url
         String url = getIntent().getStringExtra("url");
-        url="file:///android_asset/"+url;
+        url = "file:///android_asset/" + url;
         //setup webView
-        webView = (WebView) findViewById(R.id.webView);
+        WebView webView = (WebView) findViewById(R.id.webView);
         WebSettings s = webView.getSettings();
         s.setJavaScriptEnabled(true);
-        webView.setWebViewClient(new WebViewClient(){
+        webView.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
@@ -33,7 +31,6 @@ public class WebViewActivity extends Activity {
 //        s.setDomStorageEnabled(true);
 
 
-
 //        s.setUseWideViewPort(true);
 //        s.setLoadWithOverviewMode(true);
 
@@ -41,7 +38,7 @@ public class WebViewActivity extends Activity {
 //        s.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NORMAL);
 //
 //        WebChromeClient wcc = new WebChromeClient();
-            //special settings for JB webview
+        //special settings for JB webview
 //        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
 //
 //            s.setAllowUniversalAccessFromFileURLs(true);

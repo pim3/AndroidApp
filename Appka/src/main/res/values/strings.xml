@@ -5,7 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="som_diabetikom">Som diabetikom</string>
     <string name="zariadenia">Zariadenia</string>
-    <string name="o_programe">O programe</string>
+    <string name="o_programe_title">O programe</string>
     <string name="glukomer">Glukomer</string>
     <string name="vaha">Vaha</string>
     <string name="tlakomer">Tlakomer</string>
@@ -13,5 +13,36 @@
     <string name="kalibracia">Kalibracia</string>
     <string name="meranie">Meranie</string>
     <string name="loading">načítavam...</string>
-    <string name="exit">Koniec</string>
+    <string name="o_programe_1">Táto aplikácia vznikla ako semestrálne zadanie z predmetu Manažment IT projektov.</string>
+    <string name="o_programe_2">Na tvorbe aplikácie sa podieľalo 5 osôb a to:</string>
+    <string name="o_programe_3">● Patrik Novotný\n● Ivan Polačik\n● Mária Aronová\n● Matúš Svítek\n● Matej Pivarči</string>
+    <string name="o_programe_4">z čoho aj vznikol názov týmu. Názov týmu PIM3 sa skladá z prvých písmen krstných mien a keďže traja tvorcovia sa volajú na M tak M3.</string>
+    <string name="o_programe_5">V aplikácii sa nachádza niekoľko animácií, ktoré nám znázorňujú ako správne používať jednotlivé odborné zdravotné zariadenia a animácia ktorá nám ukazuje čo to vlastne je Telemedicína.</string>
+    <string name="o_programe_6">Zariadenia ktoré animácia zobrazuje sú:</string>
+    <string name="o_programe_7">● Glukomer\n● Tlakomer\n● Váha</string>
+    <string name="o_programe_8">Každá animácia ukazuje správny postup pri meraní, nastavenie prístroja a všetko čo je potrebné k používaniu.</string>
+    <string name="o_programe_9">Celá aplikácia je určená hlavne pre DIABETIKOV.</string>
+    <string name="som_diabetikom_1">Diabetes</string>
+    <string name="som_diabetikom_2">Diabetes mellitus 1. typu (DM-1) je charakterizovaný absolútnym nedostatkom inzulínu a preto je nevyhnutná jeho substitúcia – podávanie formou podkožnej aplikácie.</string>
+    <string name="som_diabetikom_3">DM-1 vzniká prevažne v detskom veku a v mladosti a v čase diagnózy diabetu je sprevádzaný akútnymi ťažkosťami ako nadmerný smäd, časté močenie, pokles telesnej hmotnosti, stupňujúca sa únava, v krajnom prípade až porucha vedomia. Od úvodu je nevyhnutná aplikácia inzulínu, spravidla cestou hospitalizácie na internom alebo detskom oddelení.</string>
+    <string name="som_diabetikom_4">Na vzniku diabetu mellitus 2. typu (DM-2) sa podieľajú faktory vonkajšie a vrodené. Genetické, alebo vrodené faktory, sú predmetom intenzívneho výskumu, o ich vplyve svedčí častejší výskyt DM-2 u pokrvných príbuzných, v jednotlivých rodinách. Na druhej strane výrazný vplyv na vznik diabetu majú aj vonkajšie, alebo získané faktory, medzi ktoré patrí nadváha či obezita, zníženie fyzickej aktivity, nadmerné psychické zaťaženie, zmena stravovacích návykov (nadmerná konzumácia tukov, jednoduchých sacharidov, nedostatok vlákniny, celkovo zvýšený energetický príjem). Kombináciou uvedených faktorov postupne dochádza k rozvoju inzulínovej rezistencie, čo zjednodušene znamená zníženie účinnosti vlastného inzulínu (vyprodukovaného beta-bunkami pankreasu) na tkanivá organizmu (najmä pečeňové bunky, svalové a tukové tkanivo). Beta-bunky pankreasu často vytvárajú väčšie množstvo inzulínu ako u zdravých jedincov v snahe prekonať zníženú citlivosť tkanív. Časom sa beta-bunky môžu vyčerpať s následným poklesom produkcie inzulínu. Na vzniku DM-2 sa teda v konečnom dôsledku podieľa znížená citlivosť na inzulín a porucha sekrécie inzulínu. Treba zdôrazniť, že vznik (čas diagnózy) DM-2 sa posúva do stále mladších vekových skupín, čo súvisí so zmenami životného štýlu v posledných desaťročiach.</string>
+    <string name="som_diabetikom_5">Strava</string>
+    <string name="som_diabetikom_6">Každý pacient s cukrovkou by mal mať jedálny plán individuálne prispôsobený podľa intenzity fyzickej aktivity (druh práce), hmotnosti, typu liečby diabetu (inzulín, tabletky, diéta) a samozrejme iných pridružených ochorení. V princípe diabetická diéta predstavuje zdravé racionálne stravovanie s potrebou zachovania správneho pomeru jednotlivých živín. Z hľadiska celodenného energetického obsahu by bielkoviny nemali presahovať 20 \u0025, tuky 30 \u0025 a sacharidy 50 \u0025. Takže sacharidy predstavujú polovicu požadovaného energetického príjmu. Sú obsiahnuté v potravinách rastlinného pôvodu ako sú obilniny, mlynárske a pekárske výrobky, cestoviny, zemiaky, ryža, strukoviny, len niektoré druhy zeleniny, ale pozor všetky druhy ovocia. Cukor je tiež rastlinného pôvodu, patrí medzi sacharidy a tie spôsobujú zvýšenie hladiny glykémie. Strava diabetika musí byť pestrá, vyvážená, mala by obsahovať všetky vyššie uvedené druhy potravín, avšak v primeranom množstve. Diabetik by mal zo stravy vylúčiť biely rafinovaný cukor – neobsahuje minerálne látky, vlákninu, vitamíny ani iné živiny, ale – výrazne zvyšuje hladinu glykémie (jedno vrecúško cukru predstavuje 1 sacharidovú jednotku a zvýši glykémiu asi o 1 mmol/l). Je preto vhodné zjesť dané množstvo sacharidov napríklad vo forme ovocia.</string>
+    <string name="glukomer_1">Glukomer</string>
+    <string name="glukomer_2">Ideálna hladina cukru je 4 až 5 mmol/ l krvi, normálne do 5,6 mmol/l krvi, ľahko zvýšená hladina 5,6 mmol/l krvi až 7 mmol/l krvi, ale viac ako 7 mmol/l krvi je signálom pre nemoc nazývanou cukrovka. Vyskytuje sa, keď pankreas tvorí málo inzulínu alebo  keď netvorí žiadny inzulín alebo keď je inzulín produkovaný, ale telo na neho nereaguje. Potom sa cukor v krvi nevie spáliť.</string>
+    <string name="tlak_1">Krvný tlak</string>
+    <string name="tlak_2">Krvný tlak (KT) je hydrostatický tlak, vyvíjaný krvou na steny ciev. Najvyšší je v aorte a veľkých tepnách a je vytváraný sťahom (kontrakciou) komôr srdca. Štandardné hodnoty KT u dospelého človeka v pokoji sú 120 mm Hg počas kontrakcie (systoly) komôr a 80 mm Hg počas uvoľnenia (diastoly) komôr.</string>
+    <string name="tlak_3">Systolický alebo horný tlak krvi zodpovedá tlaku v tepnách počas systoly, čiže sťahu komôr. Systolický krvný tlak sa vytvára, keď sa srdce sťahuje a pumpuje krv do artérií.</string>
+    <string name="tlak_4">Diastolický alebo dolný tlak krvi zodpovedá tlaku v tepnách počas diastoly, čiže plnenia komôr krvou. Diastolický krvný tlak vzniká, keď srdce vzápätí ochabne.</string>
+    <string name="tlak_5">Vysoký krvný tlak - hypertenzia je definovaná ako krvný tlak, ktorého hodnota dosahuje 160/95 mmHg a viac, resp. leží nad hodnotou, ktorá by bola primeraná veku.</string>
+    <string name="tlak_6">Nízky krvný tlak - hypotenzia, hovoríme o nej, ak krvný tlak leží pod systolickou normovou hodnotou, u dospelých medzi 95 a 110 mmHg.</string>
+    <string name="vaha_1">Osobná váha</string>
+    <string name="vaha_2">Dobrý výsledok merania hmotnosti sa nedá presne určiť. Hmotnosť človeka závisí aj od ďaľších vecí ako napríklad od výšky človeka. </string>
+    <string name="vaha_3">Približnú správnu váhu vypočítame pomocou vzorcou :</string>
+    <string name="vaha_4">•MUŽI: (výška v cm × 0,72) - 58 = ideálna váha v kg</string>
+    <string name="vaha_5">•ŽENY: (výška v cm × 0,63) - 49 = ideálna váha v kg</string>
+    <string name="vaha_6">BMI</string>
+    <string name="vaha_7">Index telesnej hmotnosti patrí medzi najviac používané metódy merania obezity. Počíta sa ako hmotnosť (m) v kilogramoch delená druhou mocninou výšky (h) v metroch.</string>
+    <string name="vaha_8">Vzorec pre výpočet:</string>
+    <string name="vaha_9">• do 18,5: podvýživa\n• 18,5–25: ideálna a zdravá váha\n• 25–30: mierna nadváha\n• 30–40: obezita\n• 40 a viac: ťažká obezita</string>
 </resources>

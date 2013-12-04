@@ -20,6 +20,7 @@ public class ButtonDefinition implements Parcelable {
     }
 
     public ButtonDefinition(int stringResource, int layoutResource) {
+        this.stringResource = stringResource;
         this.layoutResource = layoutResource;
         buttonType = ButtonType.LAYOUT;
     }
