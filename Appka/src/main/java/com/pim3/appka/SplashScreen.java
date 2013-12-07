@@ -33,24 +33,23 @@ public class SplashScreen extends Activity {
     //method called by "main menu" on onCreate event to initialize menu structure and buttons
     private MenuContent getMenuContent() {
         String testPage = "test1.html";
-        String tlakomerMeranie = "tlakomer.html";
 
         //GLUKOMER MENU
         List<ButtonDefinition> glukomerButtons = new ArrayList<ButtonDefinition>();
         glukomerButtons.add(new ButtonDefinition(R.string.kalibracia, "Glukomer_kalibracia.html"));
-        glukomerButtons.add(new ButtonDefinition(R.string.meranie, testPage));
+        glukomerButtons.add(new ButtonDefinition(R.string.meranie, "glukomer-meranie.html"));
         glukomerButtons.add(new ButtonDefinition(R.string.vyhodnotenie, R.layout.glukomer_vyhodnotenie));
         MenuContent glukomerMenu = new MenuContent(R.drawable.glu_logo, R.string.glukomer, glukomerButtons);
 
         //VAHA MENU
         List<ButtonDefinition> vahaButtons = new ArrayList<ButtonDefinition>();
-        vahaButtons.add(new ButtonDefinition(R.string.meranie, testPage));
+        vahaButtons.add(new ButtonDefinition(R.string.meranie, "vaha.html"));
         vahaButtons.add(new ButtonDefinition(R.string.vyhodnotenie, R.layout.vaha_vyhodnotenie));
         MenuContent vahaMenu = new MenuContent(R.drawable.vaha_logo, R.string.vaha, vahaButtons);
 
         //TLAKOMER MENU
         List<ButtonDefinition> tlakomerButtons = new ArrayList<ButtonDefinition>();
-        tlakomerButtons.add(new ButtonDefinition(R.string.meranie, tlakomerMeranie));
+        tlakomerButtons.add(new ButtonDefinition(R.string.meranie, "tlakomer.html"));
         tlakomerButtons.add(new ButtonDefinition(R.string.vyhodnotenie, R.layout.tlakomer_vyhodnotenie));
         MenuContent tlakomerMenu = new MenuContent(R.drawable.tlak_logo, R.string.tlakomer, tlakomerButtons);
 

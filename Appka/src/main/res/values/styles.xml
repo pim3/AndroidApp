@@ -13,7 +13,7 @@
     <color name="biela">#FFFFFF</color>
 
     <style name="basicText">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/biela</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
