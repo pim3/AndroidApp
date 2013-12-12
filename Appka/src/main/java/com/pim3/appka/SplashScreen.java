@@ -43,7 +43,8 @@ public class SplashScreen extends Activity {
 
         //VAHA MENU
         List<ButtonDefinition> vahaButtons = new ArrayList<ButtonDefinition>();
-        vahaButtons.add(new ButtonDefinition(R.string.meranie, "vaha.html"));
+        vahaButtons.add(new ButtonDefinition(R.string.kalibracia, "vaha_nastavenie.html"));
+        vahaButtons.add(new ButtonDefinition(R.string.meranie, "vaha_meranie.html"));
         vahaButtons.add(new ButtonDefinition(R.string.vyhodnotenie, R.layout.vaha_vyhodnotenie));
         MenuContent vahaMenu = new MenuContent(R.drawable.vaha_logo, R.string.vaha, vahaButtons);
 
@@ -63,6 +64,7 @@ public class SplashScreen extends Activity {
         //MAIN MENU
         List<ButtonDefinition> mainMenuButtons = new ArrayList<ButtonDefinition>();
         mainMenuButtons.add(new ButtonDefinition(R.string.som_diabetikom, R.layout.som_diabetikom_layout));
+        mainMenuButtons.add(new ButtonDefinition(R.string.about_eHealth, "data_lekar.html"));
         mainMenuButtons.add(new ButtonDefinition(R.string.zariadenia, zariadeniaMenu));
         mainMenuButtons.add(new ButtonDefinition(R.string.o_programe_title, R.layout.o_programe_layout));
 //        mainMenuButtons.add(new ButtonDefinition(R.string.exit));

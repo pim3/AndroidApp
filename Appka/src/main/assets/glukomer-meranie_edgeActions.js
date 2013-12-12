@@ -76,11 +76,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 25000, function(sym, e) {
-         sym.play("kodStart");
-
-      });
-      //Edge binding end
+      
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 7500, function(sym, e) {
          sym.stop();
@@ -187,6 +183,116 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindElementAction(compId, symbolName, "${_refresh7}", "click", function(sym, e) {
          sym.play("slide_7");
          
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 25000, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 30500, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_right9}", "click", function(sym, e) {
+         sym.play("slide_10");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_left9}", "click", function(sym, e) {
+         sym.play("slide_8");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_refresh9}", "click", function(sym, e) {
+         sym.play("slide_9");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_right8}", "click", function(sym, e) {
+         sym.play("slide_9");
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_left8}", "click", function(sym, e) {
+         sym.play("slide_7");
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_refresh8}", "click", function(sym, e) {
+         sym.play("slide_8");
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 35000, function(sym, e) {
+         sym.play("blik1");
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 38500, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_right10}", "click", function(sym, e) {
+         sym.play("slide_11");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_left10}", "click", function(sym, e) {
+         sym.play("slide_9");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_refresh10}", "click", function(sym, e) {
+         sym.play("slide_10");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 43500, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_left11}", "click", function(sym, e) {
+         sym.play("slide_10");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_refresh11}", "click", function(sym, e) {
+         sym.play("slide_11");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 51500, function(sym, e) {
+         sym.stop();
 
       });
       //Edge binding end
