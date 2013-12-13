@@ -15,7 +15,11 @@
             android:text="@string/glukomer_1" />
 
         <TextView
-            style="@style/lastElement"
+            style="@style/basicText"
             android:text="@string/glukomer_2" />
+
+        <ImageView
+            style="@style/image"
+            android:src="@drawable/glykemia" />
     </LinearLayout>
 </ScrollView>

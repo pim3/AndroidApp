@@ -15,8 +15,12 @@
             android:text="@string/tlak_1" />
 
         <TextView
-            style="@style/paddingBot"
+            style="@style/basicText"
             android:text="@string/tlak_2" />
+
+        <ImageView
+            style="@style/image"
+            android:src="@drawable/tlak" />
 
         <TextView
             style="@style/paddingBot"
