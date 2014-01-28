@@ -68,6 +68,6 @@ public class SplashScreen extends Activity {
         mainMenuButtons.add(new ButtonDefinition(R.string.zariadenia, zariadeniaMenu));
         mainMenuButtons.add(new ButtonDefinition(R.string.o_programe_title, R.layout.o_programe_layout));
 //        mainMenuButtons.add(new ButtonDefinition(R.string.exit));
-        return new MenuContent(R.drawable.logo, -1, mainMenuButtons);//-1 no title resource
+        return new MenuContent(R.drawable.diabethor, -1, mainMenuButtons);//-1 no title resource
     }
 }
